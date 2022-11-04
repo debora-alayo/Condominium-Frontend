@@ -1,13 +1,14 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom';
 
 import Home from "../pages/Home";
 
 
-export default function App() {
+function Routes() {
   return (
-    <Router>
+    <HashRouter>
       <Route exact path="/" component={Home} />
-    </Router>
+    </HashRouter>
   );
 }
 
+export default Routes();

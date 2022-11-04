@@ -1,20 +1,20 @@
 import React, { Component } from "react";
  
-import { Typography } from "@mui/material";
+import { Container, Paper, Typography } from "@mui/material";
 import logo from "../assets/logo.svg";
 
+import NavBar from "../components/Navbar";
 
-class Home extends Component {
-  render() {
-    return (
-      <div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <Typography variant="h3" component="h1" gutterBottom>
-          Hola
-        </Typography>
-      </div>
-    );
-  }
+
+function Home(){
+  <React.Component>
+    <NavBar/>
+    <Paper>
+      <Typography variant="h1">
+        Hola, esto es una app
+      </Typography>
+    </Paper>
+  </React.Component>
 }
  
 export default Home;
